@@ -141,7 +141,9 @@ SPECTACULAR_SETTINGS = {
 }
 
 # CORS: autoriser le frontend Angular (dev)
-CORS_ALLOW_ALL_ORIGINS = True  # En production, remplacer par CORS_ALLOWED_ORIGINS = ["https://..."]
+CORS_ALLOWED_ORIGINS = [
+    "https://mon-portfolio-frontend.vercel.app",
+]
 
 # Email / SMTP configuration
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
