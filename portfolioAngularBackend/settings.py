@@ -45,7 +45,18 @@ INSTALLED_APPS = [
 
     'utilisateur',
     'portfolio',
+
+    'cloudinary_storage',
+    'cloudinary',
 ]
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'ton_nom',
+    'API_KEY': 'ta_cle',
+    'API_SECRET': 'ton_secret'
+}
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
